@@ -6,7 +6,7 @@ hide_title: true
 
 export const Image = ({width,src}) => (<img style={{width}} src={src}/>);
 
-<Image src="../static/img/banner.svg" width="50%"/>
+<Image src="img/banner.svg" width="50%"/>
 
 - **Company:** Elbit Systems LTD.
 - **Project field**: Big Data / Graph (Social)
@@ -36,4 +36,4 @@ Components to achieve this goal.
 - [Project Kickoff Document](https://docs.google.com/document/d/13jBvjWZJGnerSwUwTJ4TDnX-6lxB2-N4us-v--1UHHo/edit?usp=sharing)
 - [Figma Drafts](https://www.figma.com/file/D9wmoj9rx7prAYEhUZDoJY/Gissy?node-id=0%3A1)
 
-![SS](../static/img/SSBanner.png)
+![SS](img/SSBanner.png)
