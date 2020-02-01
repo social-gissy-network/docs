@@ -29,7 +29,7 @@ function Home() {
   const imgUrl = useBaseUrl("img/SSBanner.png");
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <header className={classnames("hero ", styles.heroBanner)}>

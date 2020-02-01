@@ -1,8 +1,8 @@
 module.exports = {
   title: "Gissy",
-  tagline: "Gissy Geospatial Analysis",
+  tagline: "Geospatial Analysis",
   url: "https://gissy-docs.github.io",
-  baseUrl: "/",
+  baseUrl: "/docs/",
   favicon: "img/favicon.ico",
   organizationName: "social-gissy-network", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
