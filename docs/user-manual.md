@@ -3,11 +3,12 @@ id: user-manual
 title: Instructions
 ---
 
-export const Image = ({width,src}) => (<img style={{width}} src={src}/>);
+import useBaseUrl from "@docusaurus/useBaseUrl";
+export const Image = ({width = '100%',src}) => (<img style={{width}} src={useBaseUrl(src)}/>);
 
 The instructions regarding to the control panel appearing on the left side of the UI.
 
-![SS](../static/img/control-panel.png)
+<Image src={'img/control-panel.png'}/>
 
 ## Modes
 
@@ -44,7 +45,7 @@ The instructions regarding to the control panel appearing on the left side of th
 3. Click on the desired source nodes in the graph, you can hold `ctrl` for multiple selection.
 4. Make sure it appears in the **"Selected Nodes"** section in the control panel.
 
-   <Image src="../static/img/selected-nodes.png" width="50%"/>
+   <Image src={'img/selected-nodes.png'} width="50%"/>
 
 5. Hit **"Apply"**.
 
@@ -54,7 +55,7 @@ The instructions regarding to the control panel appearing on the left side of th
 
 1. Drag the **"Dates Range"** controller:
 
-    <Image src="../static/img/date-ranges.png" width="50%"/>
+   <Image src={'img/date-ranges.png'} width="50%"/>
 
 2. Hit **"Apply"**.
 
