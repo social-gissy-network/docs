@@ -6,27 +6,11 @@ import classnames from "classnames";
 import React from "react";
 import styles from "./styles.module.css";
 
-const features = [];
-
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={classnames("col col--4", styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
-
-function Home() {
+const Home = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const imgUrl = useBaseUrl("img/SSBanner.png");
+
   return (
     <Layout
       title={`${siteConfig.title}`}
@@ -50,21 +34,8 @@ function Home() {
           <img src={imgUrl} className={styles.featureImage} />
         </div>
       </header>
-      <main>
-        {features && features.length && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
     </Layout>
   );
-}
+};
 
 export default Home;
